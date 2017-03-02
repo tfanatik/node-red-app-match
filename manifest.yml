@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: node-red-app-match
+  host: node-red-app-match
+  disk_quota: 1024M
+  services:
+  - node-red-app-match-cloudantNoSQLDB
+  - node-red-app-match-iotf-service
